@@ -1,0 +1,69 @@
+{
+  "name": "yandex-diplom",
+  "version": "1.0.0",
+  "description": "finish work Yandex.Praktikum",
+  "main": "app.js",
+  "scripts": {
+    "build": "rimraf dist && webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open --watch",
+    "deploy": "gh-pages -d dist",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denizen24/yandex-diplom.git"
+  },
+  "keywords": [
+    "Yandex.Praktikum",
+    "News",
+    "Site-news",
+    "denizen24.ru"
+  ],
+  "author": "Vladimirov Denis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denizen24/yandex-diplom/issues"
+  },
+  "homepage": "https://github.com/denizen24/yandex-diplom#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "autoprefixer": "9.6.1",
+    "babel-loader": "8.0.6",
+    "css-loader": "3.2.0",
+    "cssnano": "4.1.10",
+    "file-loader": "4.2.0",
+    "gh-pages": "~2.0.1",
+    "html-webpack-plugin": "3.2.0",
+    "image-webpack-loader": "5.0.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "path": "0.12.7",
+    "postcss-loader": "3.0.0",
+    "webpack": "4.39.3",
+    "webpack-cli": "3.3.7",
+    "webpack-dev-server": "3.8.0",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "celebrate": "^10.0.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "editorconfig": "^0.15.3",
+    "express": "^4.17.1",
+    "express-winston": "^4.0.1",
+    "helmet": "^3.21.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.7",
+    "mongoose-unique-validator": "^2.0.3",
+    "mongoose-validator": "^2.1.0",
+    "winston": "^3.2.1",
+    "babel-polyfill": "6.26.0",
+    "core-js": "3.1.4"
+  }
+}
