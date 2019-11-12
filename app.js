@@ -50,7 +50,7 @@ app.post('/signup', celebrate({
   }),
 }), createUser);
 
-app.use('/users/me', auth, usersRoutes);
+app.use('/users', auth, usersRoutes);
 app.use('/article', auth, articleRoutes);
 
 app.use(errorLogger);
